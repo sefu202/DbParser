@@ -1,4 +1,4 @@
-# DpParser
+# DbParser
 Python Tool to Parse S7-1200 DB Blocks to make them available on the Webserver as json file utilizing AWP commands
 
 ## Usage
