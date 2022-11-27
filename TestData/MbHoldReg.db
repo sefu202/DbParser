@@ -1,0 +1,49 @@
+﻿DATA_BLOCK "MbHoldReg"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+NON_RETAIN
+   VAR 
+      Test : Struct
+         tesete : Bool;
+         tes : Struct
+            v1 : Bool;
+            v2 : Int;
+         END_STRUCT;
+         "string" : String;
+      END_STRUCT;
+      state : Int;
+      arr : Array[0..99] of Int;
+      arr2 : Array[0..9] of Struct
+         v1 : Bool;
+         v2 : Bool;
+      END_STRUCT;
+   END_VAR
+
+
+BEGIN
+   arr[0] := 16#1;
+   arr[1] := 16#2;
+   arr[2] := 16#3;
+   arr[3] := 16#4;
+   arr[4] := 5;
+   arr[5] := 5;
+
+END_DATA_BLOCK
+
+
+   VAR 
+      Test : Struct
+         tesete : Bool;
+         tes : Struct
+            v1 : Bool;
+            v2 : Int;
+         END_STRUCT;
+         "string" : String;
+         timestamp : Time_Of_Day;
+         smpleDuration : Time;
+         "date" : Date;
+      END_STRUCT;
+      state : Word;
+      arr : Array[0..99] of Byte;
+  
+   END_VAR
